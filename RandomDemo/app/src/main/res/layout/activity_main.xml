@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="143dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="278dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#E91E63"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="123dp"
+        android:text="Random"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextKetThuc"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="393dp"
+        android:background="#03A9F4"
+        android:drawableLeft="@drawable/icon_finish"
+        android:ems="10"
+        android:hint="Nhập Số kết thúc random"
+        android:inputType="number"
+        android:textColor="#FF5722"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextBatDau"
+        android:layout_width="326dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="512dp"
+        android:background="#8BC34A"
+        android:drawableLeft="@drawable/icon_start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nhập Số bắt đầu random"
+        android:inputType="number"
+
+        android:textColor="#FFEB3B"
+        android:textSize="24sp" />
+</RelativeLayout>
