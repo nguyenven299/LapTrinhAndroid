@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxWdP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonXacNhan"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="134dp"
+        android:text="Windows Phone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxWdP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="140dp"
+        android:text="IOS" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxIos"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="131dp"
+        android:text="Android" />
+
+    <Button
+        android:id="@+id/buttonXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="62dp"
+        android:text="Xac Nhan" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/editTextHoTen"
+        android:layout_width="341dp"
+        android:layout_height="75dp"
+        android:textSize="26sp"
+        android:textColor="#6767B1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="374dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhap ho ten"
+        android:drawableRight="@drawable/icon_user"
+        android:textColorHint="#FFDE00"
+        />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="220dp"
+        android:text="Lay Noi Dung" />
+</RelativeLayout>
