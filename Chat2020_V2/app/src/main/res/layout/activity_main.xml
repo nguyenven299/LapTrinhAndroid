@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Button
+        android:id="@+id/buttonGhiAm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="84dp"
+        android:text="Ghi Âm" />
+
+    <Button
+        android:id="@+id/buttonXong"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/buttonGui"
+        android:layout_toEndOf="@+id/buttonGhiAm"
+        android:text="Xong" />
+
+    <Button
+        android:id="@+id/buttonGui"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="23dp"
+        android:text="Gửi" />
+</RelativeLayout>

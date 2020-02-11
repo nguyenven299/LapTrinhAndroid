@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/buttonGhiAm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="90dp"
+        android:text="Ghi Am" />
+
+    <Button
+        android:id="@+id/buttonXong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="92dp"
+        android:layout_toEndOf="@+id/buttonGhiAm"
+        android:text="Xong" />
+
+    <Button
+        android:id="@+id/buttonGui"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="95dp"
+        android:layout_toEndOf="@+id/buttonXong"
+        android:text="Gui" />
+</RelativeLayout>
