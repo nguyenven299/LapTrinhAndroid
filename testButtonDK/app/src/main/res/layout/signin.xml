@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/textviewHelloS"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="@dimen/dp30"
+        android:text="Hello! Welcome my app. Please register a account."
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp40"
+        android:textSize="@dimen/dp15"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+
+
+        ></TextView>
+    <EditText
+    android:id="@+id/editextUsernameS"
+    android:layout_width="@dimen/dp250"
+    android:layout_height="@dimen/dp50"
+    android:layout_below="@+id/textviewHelloS"
+    android:layout_marginTop="@dimen/dp40"
+    android:layout_centerHorizontal="true"
+    android:hint="UserName"
+    android:textSize="@dimen/dp15"
+    style="@android:style/Widget.EditText"
+    android:focusable="true"
+        android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    ></EditText>
+    <EditText
+        android:id="@+id/editextFistNameS"
+        android:layout_width="@dimen/dp130"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/editextUsernameS"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp30"
+        android:hint="First Name"
+        android:textSize="@dimen/dp15"
+        style="@android:style/Widget.EditText"
+        android:focusable="true"
+        android:background="#FFFFFF"
+        android:focusableInTouchMode="true"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editextLastNameS"
+        style="@android:style/Widget.EditText"
+        android:layout_width="@dimen/dp130"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/editextUsernameS"
+        android:layout_alignRight="@+id/editextFistNameS"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp30"
+        android:textSize="@dimen/dp15"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Last Name"
+        ></EditText>
+    <EditText
+        android:id="@+id/editextBirthDayS"
+        android:layout_width="@dimen/dp130"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/editextFistNameS"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp30"
+        android:hint="Your Birthday"
+        android:textSize="@dimen/dp15"
+        style="@android:style/Widget.EditText"
+        android:focusable="true"
+        android:background="#FFFFFF"
+        android:focusableInTouchMode="true"
+        ></EditText>
+    <EditText
+        android:id="@+id/editextNumberPhoneS"
+        style="@android:style/Widget.EditText"
+        android:layout_width="@dimen/dp130"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/editextLastNameS"
+        android:layout_alignRight="@+id/editextBirthDayS"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp30"
+        android:textSize="@dimen/dp15"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Number Phone"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editextPassWord1S"
+        style="@android:style/Widget.EditText"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/editextUsernameS"
+        android:layout_marginTop="@dimen/dp187"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="PassWord"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/dp15"></EditText>
+    <EditText
+        android:id="@+id/editextPassWord2S"
+        style="@android:style/Widget.EditText"
+        android:layout_width="@dimen/dp250"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/editextPassWord1S"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="PassWord Again"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/dp15"></EditText>
+    <Button
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp50"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editextPassWord2S"
+        android:layout_marginTop="@dimen/dp30"
+        ></Button>
+</RelativeLayout>

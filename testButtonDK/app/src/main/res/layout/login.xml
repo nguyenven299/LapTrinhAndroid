@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/buttonSigninL"
+        android:text= "Sign In"
+
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"></Button>
+    <Button
+        android:id="@+id/buttonLoginL"
+
+        android:text="Log In"
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonSigninL"
+        android:layout_marginTop="@dimen/dp30"></Button>
+    <EditText
+        android:id="@+id/edittextUserNameL"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:hint="User Name"
+        android:textSize="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp90"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/edittextPassWordL"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:textSize="@dimen/dp15"
+        android:layout_below="@+id/edittextUserNameL"
+        android:layout_marginTop="@dimen/dp30"
+        ></EditText>
+
+</RelativeLayout>
