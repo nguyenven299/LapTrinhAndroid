@@ -9,7 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
+
+
 
    private Button buttonDangKy, buttonDangNhap;
    private EditText editTextNguoiDung, editTextMatKhau;
