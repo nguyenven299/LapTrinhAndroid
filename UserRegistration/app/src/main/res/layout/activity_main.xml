@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ImageviewFirebaseIcon"
+        android:layout_width="@dimen/dp194"
+        android:layout_height="@dimen/dp219"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/firebase_icon"
+        ></ImageView>
+    <EditText
+        android:id="@+id/EdittextEnterPhone"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/ImageviewFirebaseIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:hint="Enter Phone"
+        android:textSize="@dimen/dp25"
+        android:digits="0123456789"
+        android:inputType="phone"
+        ></EditText>
+    <Button
+        android:id="@+id/ButtonGetVerificationCode"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/EdittextEnterPhone"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_centerHorizontal="true"
+        android:background="#9E9B9B"
+        android:text="Get Verification Code"
+        android:textSize="@dimen/dp20"
+        android:textAllCaps="false"
+        ></Button>
+    <EditText
+        android:id="@+id/EdittextEnterCodeReceived"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/ButtonGetVerificationCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:hint="Enter Code Received"
+        android:textSize="@dimen/dp25"
+        android:digits="0123456789"
+        android:inputType="number"
+        ></EditText>
+    <Button
+        android:id="@+id/ButtonSignin"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/EdittextEnterCodeReceived"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_centerHorizontal="true"
+        android:background="#9E9B9B"
+        android:text="Sign In"
+        android:textSize="@dimen/dp20"
+        android:textAllCaps="false"
+        ></Button>
+</RelativeLayout>

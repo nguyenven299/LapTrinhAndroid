@@ -44,14 +44,12 @@ public class MainActivity extends AppCompatActivity {
                     editTextNguoiDung.setError("Please Enter User");
                     editTextMatKhau.setError("Please Enter PassWord");
                 }
-                 else if (editTextNguoiDung.getText().toString().isEmpty())
+                 else if (editTextNguoiDung.getText().toString().isEmpty()&&editTextMatKhau.getText().toString().isEmpty())
                 {
                     editTextNguoiDung.setError("Please Enter User");
-                }
-                else if (editTextMatKhau.getText().toString().isEmpty())
-                {
                     editTextMatKhau.setError("Please Enter PassWord");
                 }
+
                 else
                 {
                     Intent intent = new Intent(MainActivity.this, welcome1.class);
