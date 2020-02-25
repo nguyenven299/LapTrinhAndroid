@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp50"
+        android:hint="Enter your name"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp25"
+        android:paddingLeft="@dimen/dp50"></EditText>
+    <EditText
+        android:id="@+id/EditTextAge"
+        android:layout_below="@+id/EditTextName"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp50"
+        android:hint="Enter your age"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp25"
+        android:paddingLeft="@dimen/dp50"></EditText>
+    <EditText
+        android:id="@+id/EditTextPhoneNum"
+        android:layout_below="@+id/EditTextAge"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp50"
+        android:hint="Enter your Phone number"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp25"
+        android:paddingLeft="@dimen/dp50"></EditText>
+    <EditText
+        android:id="@+id/EditTextHeight"
+        android:layout_below="@+id/EditTextPhoneNum"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp50"
+        android:hint="Enter your height"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp25"
+        android:paddingLeft="@dimen/dp50"></EditText>
+    <Button
+        android:id="@+id/ButtonSave"
+        android:layout_width="@dimen/dp90"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/EditTextHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp60"
+        android:textAllCaps="false"
+        android:text="Save"
+
+        ></Button>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@+id/EditTextTitile"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="@dimen/dp40"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="Title"
+        android:layout_marginTop="@dimen/dp50"
+        android:paddingLeft="@dimen/dp10"
+        ></EditText>
+    <EditText
+        android:id="@+id/EditTextDescription"
+        android:layout_width="@dimen/dp240"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:layout_below="@id/EditTextTitile"
+        android:hint="Description"
+        android:layout_marginTop="@dimen/dp30"
+        android:paddingLeft="@dimen/dp10"
+        android:minHeight="@dimen/dp300"
+        android:gravity="start"
+        ></EditText>
+    <Button
+        android:id="@+id/ButtonSave"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/EditTextDescription"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp70"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Save"
+        android:textAllCaps="false"
+        ></Button>
+
+</RelativeLayout>
