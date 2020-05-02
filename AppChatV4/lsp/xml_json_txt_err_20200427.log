@@ -1,0 +1,14 @@
+internal/validators.js:112
+    throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:112:11)
+    at Url.parse (url.js:155:3)
+    at Object.urlParse [as parse] (url.js:150:13)
+    at AnalysisLSPServer.handle_file_event (C:\Users\nguye\.AndroidStudio3.5\config\plugins\org.jboss.tools.intellij.analytics\lib\server\server.js:88:29)
+    at Timeout._onTimeout (C:\Users\nguye\.AndroidStudio3.5\config\plugins\org.jboss.tools.intellij.analytics\lib\server\server.js:315:16)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}

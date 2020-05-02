@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A4DFED"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Tài Khoản\nMạng Xã Hội"
+        android:textSize="@dimen/dp35"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        ></TextView>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo_gdu"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/dp10"
+    ></ImageView>
+    <Button
+        android:id="@+id/buttonDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="Đăng Ký Bằng Số Điện Thoại"
+        android:textSize="@dimen/dp20"
+        android:background="#FFFF"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp10"
+        ></Button>
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:id="@+id/signUpGoogle"
+        ></com.google.android.gms.common.SignInButton>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/signUpFacebook"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:minHeight="@dimen/dp50" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHuyDangKy"
+        android:text="Hủy Đăng Ký"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="#D82525"
+        android:textColor="#FFF"
+        android:textSize="@dimen/dp30"
+        android:padding="@dimen/dp15"
+        ></Button>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4DFED">
+
+<ImageView
+    android:layout_width="@dimen/dp180"
+    android:layout_height="@dimen/dp180"
+    android:src="@drawable/logo_gdu"
+    android:layout_gravity="center"
+    ></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="match_parent"
+            app:ccp_defaultPhoneCode="84"
+            android:minHeight="@dimen/dp25"
+            app:ccp_textSize="@dimen/dp17"></com.hbb20.CountryCodePicker>
+
+        <EditText
+
+            android:id="@+id/edtiTextSDT"
+            android:layout_width="@dimen/dp280"
+            android:layout_height="wrap_content"
+
+            android:background="#FFF"
+            android:hint="Nhập Số Điện Thoại"
+            android:minHeight="@dimen/dp25"
+            android:paddingHorizontal="@dimen/dp30"
+            android:paddingVertical="@dimen/dp10"
+            android:textSize="@dimen/dp20"></EditText>
+    </LinearLayout>
+
+    <EditText
+
+        android:id="@+id/edtiTextMSSV"
+        android:layout_width="@dimen/dp280"
+        android:layout_height="wrap_content"
+
+        android:background="#FFF"
+        android:hint="Nhập Mã Số Sinh Viên"
+        android:minHeight="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingHorizontal="@dimen/dp30"
+        android:paddingVertical="@dimen/dp10"
+        android:textSize="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp120"
+        ></EditText>
+    <EditText
+
+    android:id="@+id/edtiTextUserName"
+    android:layout_width="@dimen/dp280"
+    android:layout_height="wrap_content"
+
+    android:background="#FFF"
+    android:hint="Nhập Đầy Đủ Họ Tên"
+    android:minHeight="@dimen/dp25"
+    android:layout_marginTop="@dimen/dp10"
+    android:paddingHorizontal="@dimen/dp30"
+    android:paddingVertical="@dimen/dp10"
+    android:textSize="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp120"
+    ></EditText>
+    <EditText
+
+        android:id="@+id/edtiTextPassword"
+        android:layout_width="@dimen/dp280"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#FFF"
+        android:hint="Nhập Mật Khẩu "
+        android:minHeight="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingHorizontal="@dimen/dp30"
+        android:paddingVertical="@dimen/dp10"
+        android:textSize="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp120"
+        ></EditText>
+    <EditText
+
+        android:id="@+id/edtiTextPasswordCheck"
+        android:layout_width="@dimen/dp280"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#FFF"
+        android:hint="Nhập Lại Mật Khẩu "
+        android:minHeight="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingHorizontal="@dimen/dp30"
+        android:paddingVertical="@dimen/dp10"
+        android:textSize="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp120"
+        ></EditText>
+    <TextView
+        android:layout_width="@dimen/dp250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp120"
+        android:textColor="@color/cardview_dark_background"
+
+        android:textSize="@dimen/dp20"
+        android:text="Chọn Ngành Học"
+        ></TextView>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="@dimen/dp250"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingHorizontal="@dimen/dp30"
+        android:paddingVertical="@dimen/dp10"
+        android:textSize="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp120"
+        android:id="@+id/spinnerNganh"
+        android:background="#FFF"
+        ></androidx.appcompat.widget.AppCompatSpinner>
+    <TextView
+        android:layout_width="@dimen/dp250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp120"
+        android:textColor="@color/cardview_dark_background"
+
+        android:textSize="@dimen/dp20"
+        android:text="Chọn Lớp Học"
+        ></TextView>
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="@dimen/dp250"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingHorizontal="@dimen/dp30"
+        android:paddingVertical="@dimen/dp10"
+        android:textSize="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp120"
+        android:id="@+id/spinnerLopHoc"
+        android:background="#FFF"
+        ></androidx.appcompat.widget.AppCompatSpinner>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/buttonDongY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng Ý"
+            android:layout_gravity="center"
+            android:paddingHorizontal="@dimen/dp10"
+            android:textSize="@dimen/dp20"
+            android:background="#18E712"
+            android:layout_marginTop="@dimen/dp10"
+
+            ></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_gravity="center"
+            android:paddingHorizontal="@dimen/dp10"
+            android:textSize="@dimen/dp20"
+            android:background="#E7123D"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp30"
+            android:id="@+id/buttonHuy"
+            ></Button>
+    </LinearLayout>
+</LinearLayout>

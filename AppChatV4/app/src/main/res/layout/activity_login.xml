@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity"
+    android:orientation="vertical"
+    android:background="#A4DFED"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập"
+        android:textSize="@dimen/dp50"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"
+        android:background="#FFFCCA"
+
+        android:gravity="center_horizontal"></TextView>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="@dimen/dp120">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="{"
+                android:textSize="@dimen/dp90"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFF"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logoGDU"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_gdu"
+                ></ImageView>
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="}"
+               android:textSize="@dimen/dp90"
+               android:gravity="center_horizontal"
+               android:textColor="#FFFF"
+               ></TextView>
+       </LinearLayout>
+       </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp400"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+    <EditText
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Tài Khoản"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="@dimen/dp50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/dp30"
+        android:inputType=""
+        android:id="@+id/editTextTaiKhoan"
+        ></EditText>
+    <EditText
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Mật Khẩu"
+        android:minHeight="@dimen/dp40"
+        android:paddingLeft="@dimen/dp50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/dp30"
+        android:inputType="textPassword"
+        android:id="@+id/editTextMatKhau"
+        ></EditText>
+    <Button
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:background="#68BB21"
+        android:text="Đăng Nhập"
+        android:minHeight="@dimen/dp50"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/dp20"
+        android:id="@+id/buttonDangNhap"
+        ></Button>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/butonDangNhapGoogle"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_gravity="center"
+        android:minHeight="@dimen/dp50"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonDangNhapFB"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp60"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:minHeight="@dimen/dp50" />
+    <TextView
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"
+        android:background="#F000"
+        ></TextView>
+</LinearLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Đăng Ký"
+        android:minHeight="@dimen/dp50"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/buttonDangKy"
+        ></Button>
+</RelativeLayout>
+</LinearLayout>
