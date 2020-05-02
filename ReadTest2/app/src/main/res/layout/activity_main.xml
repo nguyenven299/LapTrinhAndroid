@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<EditText
+    android:hint="File Name"
+    android:id="@+id/textview_filename"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input your text"
+        android:id="@+id/textview_text"
+        ></EditText>
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/b_load"
+    android:text="Load"
+    android:layout_gravity="center_horizontal"
+    ></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_write"
+        android:text="Save"
+        android:layout_gravity="center_horizontal"
+        ></Button>
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></TextView>
+</LinearLayout>
