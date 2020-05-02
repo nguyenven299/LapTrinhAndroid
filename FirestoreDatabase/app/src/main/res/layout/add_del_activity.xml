@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_insert"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/TextViewId"
+        android:text="Insert Your Id"
+        android:textSize="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/EditTextId"
+        android:layout_below="@+id/TextViewId"
+        android:hint="Insert your id here!"
+        android:textSize="@dimen/dp20"
+        android:paddingLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        ></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/TextViewFullName"
+        android:text="Insert Your Full Name"
+        android:textSize="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:textStyle="bold"
+        android:layout_below="@+id/EditTextId"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/EditTextFullName"
+        android:layout_below="@+id/TextViewFullName"
+        android:hint="Insert your full name here!"
+        android:textSize="@dimen/dp20"
+        android:paddingLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        ></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/TextViewClass"
+        android:text="Insert Your Class"
+        android:textSize="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:textStyle="bold"
+        android:layout_below="@id/EditTextFullName"
+        android:layout_marginTop="@dimen/dp30"
+        ></TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:layout_below="@+id/TextViewClass"
+        android:id="@+id/SpinnerClass"
+
+        ></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/TextViewAge"
+        android:text="Insert Your Age"
+        android:textSize="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:textStyle="bold"
+        android:layout_below="@id/SpinnerClass"
+        android:layout_marginTop="@dimen/dp30"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/EditTextAge"
+        android:layout_below="@+id/TextViewAge"
+        android:hint="Insert your age here!"
+        android:textSize="@dimen/dp20"
+        android:paddingLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        ></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/TextViewPhone"
+        android:text="Insert Your Phone"
+        android:textSize="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:textStyle="bold"
+        android:layout_below="@+id/EditTextAge"
+        android:layout_marginTop="@dimen/dp30"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/EditTextPhone"
+        android:layout_below="@+id/TextViewPhone"
+        android:hint="Insert your phone here!"
+        android:textSize="@dimen/dp20"
+        android:paddingLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        ></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/TextViewAddress"
+        android:text="Insert Your Address"
+        android:textSize="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:textStyle="bold"
+        android:layout_below="@id/EditTextPhone"
+        android:layout_marginTop="@dimen/dp30"
+        ></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:id="@+id/EditTextAddress"
+        android:layout_below="@+id/TextViewAddress"
+        android:hint="Insert your full name here!"
+        android:textSize="@dimen/dp20"
+        android:paddingLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        ></EditText>
+    <Button
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/EditTextAddress"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp50"
+        android:text="Save"
+        android:id="@+id/ButtonSave"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp25"
+        android:visibility="visible"
+        ></Button>
+    <Button
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@+id/EditTextAddress"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_alignParentRight="true"
+        android:text="Delete"
+        android:id="@+id/ButtonDel"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dp25"
+        android:layout_marginRight="@dimen/dp50"
+        android:visibility="visible"
+        ></Button>
+
+</RelativeLayout>
