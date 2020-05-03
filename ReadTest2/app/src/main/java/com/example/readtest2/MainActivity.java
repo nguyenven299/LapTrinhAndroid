@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int PERMISSION_REQUEST_STORAGE =1000;
     private static final int READ_REQUEST_CODE =42;
     Button buttonRead,buttonWrite;
-    TextView textView_output;
+    TextView textView_output, textViewAddress;
 EditText editTextfilename, editTextText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,7 @@ EditText editTextfilename, editTextText;
         editTextfilename     = findViewById(R.id.textview_filename);
         editTextText = findViewById(R.id.textview_text);
         buttonRead  = findViewById(R.id.b_load);
+        textViewAddress = findViewById(R.id.Address);
         buttonWrite = findViewById(R.id.b_write);
         buttonWrite.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -104,6 +105,8 @@ EditText editTextfilename, editTextText;
                 path = path.substring( path.indexOf( ":" ) + 1 );
                 Toast.makeText( this, "" + path, Toast.LENGTH_SHORT ).show();
                 textView_output.setText( ReadText( path ) );
+                String namefile = path;
+                textViewAddress.setText( namefile );
             }
         }
     }
@@ -135,26 +138,36 @@ EditText editTextfilename, editTextText;
         }
     }
     private void writeFile() {
-        if(isExternalStorageWritable() && checkPermission( Manifest.permission.WRITE_EXTERNAL_STORAGE ))
+        if (editTextfilename.length() <3)
         {
-            String text = editTextfilename.getText().toString();
-            File file = new File(Environment.getExternalStorageDirectory(),text+".txt");
+            editTextfilename.setError( "Insert Your File Name" );
+        }
+        else
+        {
+            if(isExternalStorageWritable() && checkPermission( Manifest.permission.WRITE_EXTERNAL_STORAGE ))
+            {
+                String text = editTextfilename.getText().toString();
+                File filepath = Environment.getExternalStorageDirectory();
+                File file = new File(filepath ,text+".txt");
 
-            try {
-                FileOutputStream fileOutputStream = new FileOutputStream(file);
-                fileOutputStream.write( editTextText.getText().toString().getBytes() );
-                fileOutputStream.close();
-                Toast.makeText( this, "File Saved", Toast.LENGTH_SHORT ).show();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
+
+                try {
+                    FileOutputStream fileOutputStream = new FileOutputStream(file);
+                    fileOutputStream.write( editTextText.getText().toString().getBytes() );
+                    fileOutputStream.close();
+                    Toast.makeText( this, "File Saved", Toast.LENGTH_SHORT ).show();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
             }
+            else {
+                Toast.makeText( this, "Cannot save", Toast.LENGTH_SHORT ).show();
+            }
+        }
 
-        }
-        else {
-            Toast.makeText( this, "Cannot save", Toast.LENGTH_SHORT ).show();
-        }
     }
     public boolean checkPermission(String permission)
     {

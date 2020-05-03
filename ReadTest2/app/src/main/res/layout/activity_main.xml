@@ -33,6 +33,11 @@
         android:layout_gravity="center_horizontal"
         ></Button>
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Address"
+        ></TextView>
+    <TextView
         android:id="@+id/tv_output"
         android:layout_width="match_parent"
         android:layout_height="250dp"></TextView>
